@@ -1,0 +1,43 @@
+@import 'minor_block/zero-style'
+@mixin slider-block()
+    width: 1320px
+    height: 743px
+    background-position: center
+    background-repeat: no-repeat
+    
+html,
+main
+    background-color: #1d1f1f
+.main-slider
+    background: #191a1a
+    margin-top: 150px
+    .slider
+        width: 1320px
+        height: 100%
+        overflow: hidden
+        .slider-line
+            width: 6600px
+            display: flex
+            position: relative
+            left: 0
+            transition: left 1.5s ease
+            .slider-photo:nth-child(1)
+                background-image: url('../img/doom-1.png')
+                @include slider-block()
+            .slider-photo:nth-child(2)
+                background-image: url('../img/witch.png')
+                @include slider-block()
+            .slider-photo:nth-child(3)
+                background-image: url('../img/cyberp.png')
+                @include slider-block()
+            .slider-photo:nth-child(4)
+                background-image: url('../img/dyingl.png')
+                @include slider-block()
+            .slider-photo:nth-child(5)
+                background-image: url('../img/bald.png')
+                @include slider-block()
+
+.search-panel
+    color: #fff
+    text-align: center
+    
